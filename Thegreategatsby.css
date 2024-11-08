@@ -1,0 +1,67 @@
+/* Read2.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header h3 {
+    margin: 5px 0;
+    font-size: 1.5em;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #333;
+    border-radius: 10px;
+}
+
+p {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+li b {
+    font-size: 1.4em;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    header h2, header h3 {
+        font-size: 1.5em;
+    }
+    
+    li {
+        font-size: 1em;
+    }
+}

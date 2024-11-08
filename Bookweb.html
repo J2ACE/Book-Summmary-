@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="Bookweb2.css">
+        <!-- Include Font Awesome for icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <script>
+            function activateSearch() {
+                const searchInput = document.getElementById('searchInput');
+                const query = searchInput.value.trim();
+                if (query) {
+                    alert('You searched for: ' + query);
+                    // You can add code here to handle actual search logic, such as redirecting or filtering results.
+                } else {
+                    alert('Please enter a search query.');
+                }
+            }
+        </script>
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="">SynopCity</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" onclick="activateSearch()">Go</button>
+            <select id="searchResults" style="display: none; width: 100%; margin-top: 10px;"></select>
+        </div>
+    </header>
+
+    <!-- Image Container for Right Side Image -->
+    <div class="right-side-image">
+        <img src="C:/Users/shirk/MY CODES/Book Summary Website/images/bookmaan.png" alt="Decorative Book Image">
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="hero-content">
+            <h1>Welcome to SynopCity</h1>
+            <p>Find your next favorite book today</p>
+        </div>
+
+        <!-- Login Box -->
+<div class="auth-box">
+    <div class="auth-container">
+        <!-- Login Form -->
+        <div id="loginForm" class="auth-form">
+            <h3>Login</h3>
+            <form>
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p class="switch-auth">Don't have an account? <a href="#" id="showSignUp">Sign up</a></p>
+        </div>
+
+        <!-- Sign Up Form (Initially hidden) -->
+        <div id="signUpForm" class="auth-form" style="display: none;">
+            <h3>Sign Up</h3>
+            <form>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p class="switch-auth">Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+    </section>
+
+    <!-- Books Section -->
+    <section id="books" class="section">
+        <div class="main-content">
+            <h2>Featured Books</h2>
+            <div class="books">
+                <div class="book">
+                    <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\1_5z4oz9FrFEvGVducvDF59g.jpg" alt="Book 1" height="300" width="200">
+                    <h3>The Monk Who Sold His Ferrari</h3>
+                    <p>Robin Sharma</p>
+                    <button><a href="Read1.html">Read</a></button>
+                </div>
+                <div class="book">
+                    <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\adventures-of-sherlock-holmes-original-imaezt8fjxcuujhd.webp" alt="Book 2" height="300" width="200">
+                    <h3>The Adventures of Sherlock Holmes</h3>
+                    <p>Arthur Conan Doyle</p>
+                    <button><a href="Read2.html">Read</a></button>
+                </div>
+                <div class="book">
+                    <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\817rULKpf7L._AC_UF1000,1000_QL80_.jpg" alt="Book 3" height="300" width="200">
+                    <h3>The 3 Mistakes of My Life</h3>
+                    <p>Chetan Bhagat</p>
+                    <button><a href="Read3.html">Read</a></button>
+                </div>
+            </div>
+            <a href="ViewMore.html" class="btn">View all Books</a>
+        </div>
+    </section>
+
+<!-- About Us Section -->
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>Learn more about SynopCity and our mission to bring books to everyone!</p>
+    
+    <!-- Creators Section -->
+    <h3>Creators</h3>
+    <div class="creators">
+        <div class="creator">
+            <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\MANTHAN P. SHIRKE.jpg" alt="Manthan P. Shirke" class="creator-img">
+            <p>Manthan P. Shirke</p>
+        </div>
+        <div class="creator">
+            <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\Balpande.jpg" alt="Mayank P. Balpande" class="creator-img">
+            <p>Mayank P. Balpande</p>
+        </div>
+    </div>
+</section>
+
+
+       <!-- Contact Us Section -->
+<section id="contact" class="section">
+    <h2 style="font-size: 2rem;">Contact Us</h2>
+    <p style="font-size: 1.2rem;">
+        Reach out to us for any queries or support!
+    </p>
+    <p style="font-size: 1.2rem;">
+        <i class="fas fa-envelope" style="font-size: 1.5rem;"></i> Email: synopcity@gmail.com
+    </p>
+    <p style="font-size: 1.2rem;">
+        <i class="fab fa-instagram" style="font-size: 1.5rem;"></i> Instagram handle: @synopcity
+    </p>
+</section>
+
+
+
+    <footer>
+        <p>&copy; 2024 SynopCity. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+      const books = [
+    { title: "The Monk Who Sold His Ferrari", url: "Read1.html" },
+    { title: "The Adventures of Sherlock Holmes", url: "Read2.html" },
+    { title: "The 3 Mistakes of My Life", url: "Read3.html" },
+    { title: "To Kill a Mockingbird", url: "Tokillamockingbird.html" },
+    { title: "1984", url: "1984.html" },
+    { title: "Pride and Prejudice", url: "Prideandprejudice.html" },
+    { title: "The Great Gatsby", url: "Thegreategatsby.html" },
+    { title: "The Da Vinci Code", url: "Thedavincicode.html" },
+    { title: "The Palace Of Illusions", url: "ThePalaceOfIllusions.html" },
+    { title: "Half Girlfriend", url: "HalfGirlfriend.html" },
+    { title: "One Indian Girl", url: "OneIndianGirl.html" }, 
+    { title: "2 States", url: "2State.html" },
+    { title: "Do Epic Shit", url: "DoEpicShit.html" },
+    { title: "The Psychology of Money", url: "ThePsychologyofMoney.html" },
+    { title: "12 Rules for Life: An Antidote to Chaos", url: "12RulesforLife-AnAntidotetoChaos.html" },
+    { title: "The Alchemist", url: "TheAlchemist.html" },
+    { title: "How to Win Friends and Influence People", url: "HowtoWinFriendsandInfluencePeople.html" },
+    { title: "Ikigai", url: "Ikigai.html" }
+];
+
+function activateSearch() {
+    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+    const dropdown = document.getElementById('searchResults');
+
+    // Clear previous results
+    dropdown.innerHTML = '';
+
+    // Add a fixed placeholder option at the top
+    const defaultOption = document.createElement('option');
+    defaultOption.textContent = 'Choose the book';
+    defaultOption.disabled = true; // Make it non-selectable
+    defaultOption.selected = true; // Ensure it's selected initially
+    dropdown.appendChild(defaultOption);
+
+    if (searchInput) {
+        const filteredBooks = books.filter(book => book.title.toLowerCase().includes(searchInput));
+
+        if (filteredBooks.length > 0) {
+            filteredBooks.forEach(book => {
+                const option = document.createElement('option');
+                option.value = book.url; // Set the URL as the value
+                option.textContent = book.title;
+                dropdown.appendChild(option);
+            });
+            dropdown.style.display = 'block';
+        } else {
+            const option = document.createElement('option');
+            option.textContent = 'No results found';
+            dropdown.appendChild(option);
+        }
+    } else {
+        dropdown.style.display = 'none';
+    }
+}
+
+// Event listener to navigate when an option is selected
+document.getElementById('searchResults').addEventListener('change', function() {
+    const selectedUrl = this.value;
+    if (selectedUrl) {
+        window.location.href = selectedUrl; // Redirects to the selected book's summary page
+    }
+});
+
+
+<!-- JavaScript Code -->
+        document.getElementById('showSignUp').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent link default behavior
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('signUpForm').style.display = 'block';
+        });
+
+        document.getElementById('showLogin').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent link default behavior
+            document.getElementById('signUpForm').style.display = 'none';
+            document.getElementById('loginForm').style.display = 'block';
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* 60% opacity */
+
+    color: #fff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-image: url('images/bgbook.png'); /* Adjust the path based on your file structure */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: #dddefd;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    transition: color 0.4s ease;
+}
+
+nav ul li a:hover {
+    color:#dddefd;
+}
+
+/* Search Bar Styles */
+.search {
+    position: relative;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #444;
+    color: #fff;
+    width: 200px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.search input::placeholder {
+    color: #ccc;
+}
+
+.search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #dddefd;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.search button:hover {
+    background-color: #fff;
+    color: #dddefd;
+}
+
+.hero {
+    /* background:#dddefd; */
+    padding: 70px 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center; /* Ensures the heading is centered */
+}
+.book-section {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    margin-top: -30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto; /* Centers the box and adds bottom margin */
+    text-align: center;
+}
+
+.book-section h2 {
+    color: #333;
+    /* margin-bottom: 30px; */
+}
+
+/* Adjusting the grid to have two columns per row */
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+    grid-gap: 40px; /* Adds space between books */
+    margin-top: 40px;
+    justify-items: center; /* Centers the content within each grid item */
+}
+
+@media screen and (max-width: 768px) {
+    .book-container {
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
+    }
+}
+
+/* Book item styles */
+.book {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 300px; /* Ensures that each book container is the same width */
+    text-align: center; /* Centers the content inside each book item */
+    display: flex;
+    flex-direction: column; /* Ensures the elements stack vertically */
+    justify-content: space-between; /* Aligns content evenly */
+    height: 100%; /* Ensures uniform height for each book card */
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Book image styling */
+.book img {
+    max-width: 100%; /* Ensures images scale properly */
+    height: auto; /* Makes the image adapt to its original aspect ratio */
+    object-fit: contain; /* Ensures the full image is visible without cropping */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Book Title */
+.book h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+    min-height: 60px; /* Consistent height for book titles */
+}
+
+/* Book Description */
+.book p {
+    margin-top: 5px;
+    color: #666;
+    font-style: italic;
+    min-height: 50px; /* Consistent height for book descriptions */
+}
+
+/* Read Button */
+.read-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto; /* Pushes the button to the bottom */
+    transition: background-color 0.3s;
+}
+
+.read-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.read-btn:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #262626;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#searchResults {
+    font-size: 16px;
+    padding: 5px;
+}

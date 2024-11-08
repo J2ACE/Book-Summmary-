@@ -1,0 +1,246 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: #ffb6c1;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    transition: color 0.4s ease;
+}
+
+nav ul li a:hover {
+    color: #ffb6c1;
+}
+
+/* Search Bar Styles */
+.search {
+    position: relative;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #444;
+    color: #fff;
+    width: 200px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.search input::placeholder {
+    color: #ccc;
+}
+
+.search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffb6c1;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.search button:hover {
+    background-color: #fff;
+    color: #ffb6c1;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(to bottom right, #ffb6c1, #ff8c8c);
+    padding: 70px 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* Main Content Styles */
+.main-content {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin-top: -30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main-content h2{
+    color: #333;
+}
+
+/* Books Grid Styles */
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+.book {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.book h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.book p {
+    margin-top: 5px;
+    color: #666;
+    font-style: italic;
+}
+
+.book button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.book button a{
+    color:#fff ;
+    text-decoration: none;
+}
+
+.book button:hover {
+    background-color: #555;
+}
+
+/* View All Books Button */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+/* footer {
+    background-color: #262626;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+footer {
+    background-color: #262626;
+    color: #fff;
+    /* padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; */
+
+    p{
+
+        padding: 20px;
+    }
+}

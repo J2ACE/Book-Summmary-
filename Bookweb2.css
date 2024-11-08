@@ -1,0 +1,524 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url('images/bgbook.png'); /* Adjust the path based on your file structure */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* 60% opacity */
+    color: #fff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: #dddefd;
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    transition: color 0.4s ease;
+}
+
+nav ul li a:hover {
+    color: #dddefd;
+}
+
+/* Search Bar Styles */
+.search {
+    position: relative;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #444;
+    color: #fff;
+    width: 200px;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search input::placeholder {
+    color: #ccc;
+}
+
+.search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #dddefd;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.search button:hover {
+    background-color: #fff;
+    color: #dddefd;
+}
+
+/* Section Styles */
+.section {
+    height: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #333;
+    padding: 60px;
+    font-size: 18px;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.section p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Books Section Specific Styling */
+.main-content {
+    background-color: rgba(255, 255, 255, 0.5); /* Reduced opacity */
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 19px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1200px;
+}
+
+.main-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Books Grid Styles */
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+.book {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.book h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.book p {
+    margin-top: 5px;
+    color: #666;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.book button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.book button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.book button:hover {
+    background-color: #555;
+}
+
+/* View All Books Button */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.4s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Search Dropdown Styles */
+#searchResults {
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* Right Side Image Styling */
+.right-side-image {
+    position: fixed;
+    right: 20px; /* Adjust for horizontal positioning */
+    top: 85%; /* Shift it lower on the page */
+    transform: translateY(-50%);
+    z-index: 50; /* Keep it above other elements if needed */
+}
+
+.right-side-image img {
+    max-width: 310px; /* Adjust width as needed */
+    height: 350px; /* Increase the height of the image */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+/* General Auth Box Styles */
+.auth-box {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+.auth-form {
+    width: 100%;
+    text-align: center;
+}
+
+.auth-form h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.auth-form input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.auth-form button {
+    width: 80%;
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.auth-form button:hover {
+    background-color: #555;
+}
+
+.auth-form p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.auth-form a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-form a:hover {
+    color: #555;
+}
+
+/* Home Section Styling */
+#home .hero-content h1 {
+    font-size: 48px; /* Increase the font size of the h1 */
+    color: #333; /* Optional: Adjust text color */
+    font-weight: bold; /* Optional: Make the font bold */
+    margin-bottom: 10px; /* Optional: Adjust the space below the h1 */
+}
+
+#home .hero-content p {
+    font-size: 24px; /* Increase the font size of the paragraph */
+    color: #333; /* Optional: Adjust text color */
+    margin-top: 0; /* Optional: Remove any margin at the top */
+}
+
+/* About Section Creators Styling */
+#about .creators {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#about .creators .creator {
+    flex: 1;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px; /* Ensure a good width for each creator */
+    margin-bottom: 40px;
+}
+
+#about .creators .creator img {
+    width: 150px; /* Zoomed out image size */
+    height: 150px; /* Keep square aspect ratio */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image is cropped */
+    object-position: top; /* Focus the image on the top (face area) */
+    margin-bottom: 15px;
+}
+
+#about .creators .creator h3 {
+    font-size: 26px; /* Increased font size for name */
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Ensure the text is darker for better contrast */
+}
+
+#about .creators .creator p {
+    font-size: 18px; /* Increased font size for description */
+    color: #555; /* Darker text color for better readability */
+    margin-top: 0;
+}
+
+/* Flexbox Adjustments for better layout on smaller screens */
+@media (max-width: 768px) {
+    #about .creators {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #about .creators .creator {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    #about .creators .creator img {
+        width: 120px; /* Slightly smaller zoomed out image for smaller screens */
+        height: 120px;
+    }
+
+    #about .creators .creator h3 {
+        font-size: 22px;
+    }
+
+    #about .creators .creator p {
+        font-size: 16px;
+    }
+}
+
+
+/* Flexbox Adjustments for better layout on smaller screens */
+@media (max-width: 768px) {
+    #about .creators {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #about .creators .creator {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    #about .creators .creator img {
+        width: 120px; /* Slightly smaller zoomed out image for smaller screens */
+        height: 120px;
+    }
+
+    #about .creators .creator h3 {
+        font-size: 22px;
+    }
+
+    #about .creators .creator p {
+        font-size: 16px;
+    }
+}
+
+
+/* Flexbox Adjustments for better layout on smaller screens */
+@media (max-width: 768px) {
+    #about .creators {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #about .creators .creator {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    #about .creators .creator img {
+        width: 150px; /* Slightly smaller image for smaller screens */
+        height: 150px;
+    }
+
+    #about .creators .creator h3 {
+        font-size: 22px;
+    }
+
+    #about .creators .creator p {
+        font-size: 16px;
+    }
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .books {
+        grid-template-columns: 1fr;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .book h3 {
+        font-size: 20px;
+    }
+
+    .right-side-image {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search input {
+        width: 80%;
+    }
+
+    .auth-container {
+        padding: 20px;
+    }
+}

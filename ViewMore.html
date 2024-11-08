@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collection</title>
+    <link rel="stylesheet" href="ViewMore.css">
+    <script>
+        function activateSearch() {
+            const searchInput = document.getElementById('searchInput');
+            const query = searchInput.value.trim();
+            if (query) {
+                alert('You searched for: ' + query);
+                // Add more advanced search processing if needed.
+            } else {
+                alert('Please enter a search query.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">SynopCity</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" onclick="activateSearch()">Go</button>
+            <select id="searchResults" style="display: none; width: 100%; margin-top: 10px;"></select>
+        </div>
+    </header>
+    
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to SynopCity</h1>
+            <!-- <p>Find your next favorite book today</p> -->
+
+    <section class="book-section">
+        <h2>Our Collection</h2>
+        <div class="book-container">
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\1_5z4oz9FrFEvGVducvDF59g.jpg" alt="Book 1">
+                <h3>THE MONK WHO SOLD HIS FERRARI</h3>
+                <p>Robin Sharma</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\Read1.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\adventures-of-sherlock-holmes-original-imaezt8fjxcuujhd.webp" alt="Book 2">
+                <h3>THE ADVENTURES OF SHERLOCK HOLMES</h3>
+                <p>Arthur Conan Doyle</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\Read2.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\817rULKpf7L._AC_UF1000,1000_QL80_.jpg" alt="Book 3">
+                <h3>THE 3 MISTAKES OF MY LIFE</h3>
+                <p>Chetan Bhagat</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\Read3.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\to kill a mocking bird.jpg" alt="Book 4">
+                <h3>TO KILL A MOCKINGBIRD</h3>
+                <p>Harper Lee</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\Tokillamockingbird.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\1984.jpg" alt="Book 5">
+                <h3>1984</h3>
+                <p>George Orwell</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\1984.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\pride and prejudice.jpg" alt="Book 6">
+                <h3>PRIDE AND PREJUDICE</h3>
+                <p>Jane Austen</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\Prideandprejudice.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\the great gatsby.jpg" alt="Book 7">
+                <h3>THE GREAT GATSBY</h3>
+                <p>F. Scott Fitzgerald</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\Thegreategatsby.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\dan brown.jpg" alt="Book 8">
+                <h3>THE DA VINCI CODE</h3>
+                <p>Dan Brown</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\Thedavincicode.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\Thepalaceofillusion.jpg" alt="Book 8">
+                <h3>THE PALACE OF ILLUSIONS</h3>
+                <p>Chitra Banerjee Divakaruni</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\ThePalaceOfIllusion.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\HalfGirlfriend.webp" alt="Book 8">
+                <h3>HALF GIRLFRIEND</h3>
+                <p>Chetan Bhagat</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\HalfGirlfriend.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\OneIndianGirl.jpg" alt="Book 8">
+                <h3>ONE INDIAN GIRL</h3>
+                <p>Chetan Bhagat</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\OneIndianGirl.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\2States.jpg" alt="Book 8">
+                <h3>2 STATES</h3>
+                <p>Chetan Bhagat</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\2State.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\Do Epic Shit.jpg" alt="Book 8">
+                <h3>DO EPIC SHIT</h3>
+                <p>Ankur Warikoo</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\DoEpicShit.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\The Psychology of Money.jpg" alt="Book 8">
+                <h3>THE PSYCHOLOGY OF MONEY</h3>
+                <p>Morgan Housel</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\ThePsychologyofMoney.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\12 Rules for Life An Antidote to Chaos.jpg" alt="Book 8">
+                <h3>12 RULES FOR LIFE: AN ANTIDOTE TO CHAOS</h3>
+                <p>Jordan B. Peterson</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\12RulesforLife-AnAntidotetoChaos.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\The Alchemist.jpg" alt="Book 8">
+                <h3>THE ALCHEMIST</h3>
+                <p>Paulo Coelho</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\TheAlchemist.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\How to Win Friends and Influence People.jpg" alt="Book 8">
+                <h3>HOW TO WIN FRIENDS AND INFLUENCE PEOPLE</h3>
+                <p>Dale Carnegie</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\HowtoWinFriendsandInfluencePeople.html">Read</a></button>
+            </div>
+            <div class="book">
+                <img src="C:\Users\shirk\MY CODES\Book Summary Website\images\Ikigai.jpg" alt="Book 8">
+                <h3>IKIGAI</h3>
+                <p>Héctor García and Francesc Miralles</p>
+                <button class="read-btn"><a href="C:\Users\shirk\MY CODES\Book Summary Website\Ikigai.html">Read</a></button>
+            </div>
+        </div>
+        <!-- <a href="#" class="view-more-btn">View More</a> -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Bookstore. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const books = [
+        { title: "The Monk Who Sold His Ferrari", url: "Read1.html" },
+    { title: "The Adventures of Sherlock Holmes", url: "Read2.html" },
+    { title: "The 3 Mistakes of My Life", url: "Read3.html" },
+    { title: "To Kill a Mockingbird", url: "Tokillamockingbird.html" },
+    { title: "1984", url: "1984.html" },
+    { title: "Pride and Prejudice", url: "Prideandprejudice.html" },
+    { title: "The Great Gatsby", url: "Thegreategatsby.html" },
+    { title: "The Da Vinci Code", url: "Thedavincicode.html" },
+    { title: "The Palace Of Illusions", url: "ThePalaceOfIllusions.html" },
+    { title: "Half Girlfriend", url: "HalfGirlfriend.html" },
+    { title: "One Indian Girl", url: "OneIndianGirl.html" }, 
+    { title: "2 States", url: "2State.html" },
+    { title: "Do Epic Shit", url: "DoEpicShit.html" },
+    { title: "The Psychology of Money", url: "ThePsychologyofMoney.html" },
+    { title: "12 Rules for Life: An Antidote to Chaos", url: "12RulesforLife-AnAntidotetoChaos.html" },
+    { title: "The Alchemist", url: "TheAlchemist.html" },
+    { title: "How to Win Friends and Influence People", url: "HowtoWinFriendsandInfluencePeople.html" },
+    { title: "Ikigai", url: "Ikigai.html" }
+];
+
+function activateSearch() {
+    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+    const dropdown = document.getElementById('searchResults');
+
+    // Clear previous results
+    dropdown.innerHTML = '';
+
+    // Add a fixed placeholder option at the top
+    const defaultOption = document.createElement('option');
+    defaultOption.textContent = 'Choose the book';
+    defaultOption.disabled = true; // Make it non-selectable
+    defaultOption.selected = true; // Ensure it's selected initially
+    dropdown.appendChild(defaultOption);
+
+    if (searchInput) {
+        const filteredBooks = books.filter(book => book.title.toLowerCase().includes(searchInput));
+
+        if (filteredBooks.length > 0) {
+            filteredBooks.forEach(book => {
+                const option = document.createElement('option');
+                option.value = book.url; // Set the URL as the value
+                option.textContent = book.title;
+                dropdown.appendChild(option);
+            });
+            dropdown.style.display = 'block';
+        } else {
+            const option = document.createElement('option');
+            option.textContent = 'No results found';
+            dropdown.appendChild(option);
+        }
+    } else {
+        dropdown.style.display = 'none';
+    }
+}
+
+// Event listener to navigate when an option is selected
+document.getElementById('searchResults').addEventListener('change', function() {
+    const selectedUrl = this.value;
+    if (selectedUrl) {
+        window.location.href = selectedUrl; // Redirects to the selected book's summary page
+    }
+});
+
+
+    </script>
+</body>
+</html>

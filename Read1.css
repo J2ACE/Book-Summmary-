@@ -1,0 +1,103 @@
+/* Read2.css */
+
+@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 5px 5px 5px 5px #757474;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header h3 {
+    margin: 5px 0;
+    font-size: 1.5em;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #333;
+    border-radius: 10px;
+}
+
+p {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    margin-top: 10rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+li b {
+    font-size: 1.4em;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    header h2, header h3 {
+        font-size: 1.5em;
+    }
+    
+    li {
+        font-size: 1em;
+    }
+}
+
+.description{
+
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.des-img{
+    margin-top: 10rem;
+    width: 40rem;
+    img{
+        margin: 2rem;
+        height: 460px;
+        width: 340px;
+
+        position: fixed;
+    }
+}
+
+.des-block{
+
+    margin: 2rem;
+    overflow-y: scroll;
+}
